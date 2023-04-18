@@ -7,9 +7,8 @@ console.log(nameOutput);
 console.log(nameOutput.textContent);
 
 nameInput.addEventListener("input", (event) => {
-  event.preventDefault();
-  if (event.currentTarget.value === "      ") {
-    return nameOutput.textContent;
+  nameOutput.textContent;
+  if (event.currentTarget.value !== "") {
+    nameOutput.textContent = event.currentTarget.value;
   }
-  nameOutput.textContent = event.currentTarget.value;
 });
