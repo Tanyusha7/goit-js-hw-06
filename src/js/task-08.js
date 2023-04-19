@@ -1,8 +1,8 @@
 const form = document.querySelector(".login-form");
-console.log(form);
-console.log(form.firstElementChild);
-console.log(form.firstElementChild.nextElementSibling);
-console.log(form.lastElementChild);
+// console.log(form);
+// console.log(form.firstElementChild);
+// console.log(form.firstElementChild.nextElementSibling);
+// console.log(form.lastElementChild);
 
 form.addEventListener("submit", onSubmit);
 
