@@ -27,14 +27,15 @@ const elementsBoxes = [];
 function createBoxes(amount) {
   amount = createBtn.previousElementSibling.value;
   for (let i = 1; i <= amount; i += 1) {
-    // console.log(i);
-    // console.log(amount);
+    console.log(i);
+    console.log(amount);
     const divEl = document.createElement("div");
     divEl.style.textAlign = "center";
-    divEl.style.width = "30px";
-    divEl.style.height += "30px";
+    divEl.style.width = `${30 + 10}px`;
+    divEl.style.height = `${30 + i}px`;
     divEl.style.backgroundColor = getRandomHexColor();
     divEl.textContent = i;
+    divEl.style.width = `${divEl.style.width + 10}px`;
 
     elementsBoxes.push(divEl);
     boxes.append(...elementsBoxes);
