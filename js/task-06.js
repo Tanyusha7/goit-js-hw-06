@@ -6,8 +6,10 @@ textInput.addEventListener("input", (event) => {
   textInput.style.borderLine = "2px";
   textInput.style.borderStyle = "solid";
   textInput.style.borderColor = "#bdbdbd";
+
   if (
-    event.currentTarget.value.length <= textInput.getAttribute("data-length")
+    event.currentTarget.value.length ===
+    Number(textInput.getAttribute("data-length"))
   ) {
     return (textInput.style.borderColor = "#4caf50");
   }

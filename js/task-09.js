@@ -16,8 +16,9 @@ const bodyBtn = document.querySelector(".change-color");
 bodyBtn.addEventListener("click", onBody);
 
 function onBody() {
-  body.style.backgroundColor = getRandomHexColor();
-
-  bodySpan.textContent = body.style.backgroundColor;
+  const color = getRandomHexColor();
+  body.style.backgroundColor = color;
+  // console.log(body.style.backgroundColor);
+  bodySpan.textContent = color;
   // console.log(bodySpan.textContent);
 }

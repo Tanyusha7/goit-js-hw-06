@@ -16,14 +16,14 @@ function onSubmit(event) {
     return alert("Please fill in all the fields!");
   }
 
-  const formData = new FormData(event.currentTarget);
-  console.log(formData);
+  // const formData = new FormData(event.currentTarget);
+  // console.log(formData);
 
-  //   formData.forEach((value, name) => {
-  //     console.log("value", value);
-  //     console.log("name", name);
-  //   });
+  // formData.forEach((value, name) => {
+  //   console.log("value", value);
+  //   console.log("name", name);
+  // });
 
-  console.log(`Email: ${email.value};   Password: ${password.value}`);
+  console.log(`{Email: ${email.value};   Password: ${password.value}}`);
   event.currentTarget.reset();
 }
